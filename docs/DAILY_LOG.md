@@ -20,3 +20,10 @@
 - Worked on: Pydantic schemas, APIRouter, building real /auth/register and /auth/login endpoints
 - Worked on: moving secrets out of source code into .env with pydantic-settings, generating a secure key
 - Commits: feat: add password hashing with bcrypt, pin compatible bcrypt version; feat: add JWT token generation with expiration; feat: move secrets to .env, add pydantic-settings config; chore: update requirements.txt with pydantic-settings and python-dotenv
+
+## Day 3 (cont.) — Route Protection
+- Worked on: OAuth2PasswordBearer, Depends() dependency injection pattern
+- Worked on: get_current_user() — decoding and verifying JWTs on protected routes
+- Worked on: debugging PowerShell token-pasting issues, using variables ($token) for reliable long-string commands
+- Worked on: end-to-end tested full auth flow (register, login, wrong password, duplicate email, protected route with/without token)
+- Commits: feat: add protected route via JWT verification (get_current_user)
